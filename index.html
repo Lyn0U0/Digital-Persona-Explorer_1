@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手機使用習慣測驗</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="startScreen" class="start-screen">
+            <h2>手機使用習慣測驗</h2>
+            <p>這個測驗將幫助你了解你的手機使用習慣，並將你歸類到不同的個性形狀，反映出你的手機人格ｽﾞｲ₍₍ (ง ˘ω˘ )ว ⁾⁾ ⁽⁽ ɾ( ˘ω˘ ɩ ) ₎₎。<br>請按下開始按鈕開始測驗，共有11題。</p>
+            <button onclick="startQuiz()">開始測驗</button>
+        </div>
+        <div id="quizWindow" class="quiz-window">
+            <div class="question" id="questionContainer"></div>
+            <div class="navigation-buttons">
+                <button id="prevButton" onclick="prevQuestion()">上一步</button>
+                <button id="nextButton" onclick="nextQuestion()">下一步</button>
+            </div>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

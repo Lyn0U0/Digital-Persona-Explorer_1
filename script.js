@@ -110,6 +110,7 @@ function showQuestion(index) {
     `;
     document.getElementById("prevButton").style.display = index === 0 ? 'none' : 'inline-block';
     document.getElementById("nextButton").textContent = index === questions.length - 1 ? '提交' : '下一步';
+    updateProgressBar(index);
 }
 
 function nextQuestion() {
@@ -132,6 +133,12 @@ function prevQuestion() {
         currentQuestionIndex--;
         showQuestion(currentQuestionIndex);
     }
+}
+
+function updateProgressBar(index) {
+    const progressBar = document.getElementById("progressBar");
+    const progress = ((index + 1) / questions.length) * 100;
+    progressBar.style.width = `${progress}%`;
 }
 
 function calculateResult() {

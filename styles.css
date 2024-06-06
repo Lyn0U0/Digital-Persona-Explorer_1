@@ -55,6 +55,7 @@ label {
 .navigation-buttons {
     display: flex;
     justify-content: space-between;
+    padding: 15px;
 }
 
 button {
@@ -90,4 +91,19 @@ button:hover {
 
 #retryButton:hover {
     background-color: #d9534f;
+}
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: #76c7c0;
+    border-radius: 10px;
+    transition: width 0.3s;
 }
